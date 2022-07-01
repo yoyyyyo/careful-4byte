@@ -30,7 +30,7 @@ class Careful4Byte {
     _requestSignatures(selector, page = 1, count = this._first) {
         return __awaiter(this, void 0, void 0, function* () {
             const request = yield axios_1.default.get('https://www.4byte.directory/api/v1/signatures/', {
-                headers: { 'User-Agent': 'careful-4byte/0.0.1' },
+                headers: { 'User-Agent': 'careful-4byte/0.0.2' },
                 params: {
                     hex_signature: selector,
                     page
