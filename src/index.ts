@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Buffer } from 'buffer';
 import { Interface } from '@ethersproject/abi';
 
-interface API4ByteElement {
+interface IAPI4ByteElement {
     id: number;
     created_at: string;
     text_signature: string;
@@ -29,9 +29,9 @@ export default class Careful4Byte {
         return signature;
     }
 
-    async _requestSignatures(selector: string, page = 1, count = this._first): Promise<API4ByteElement[]> {
+    async _requestSignatures(selector: string, page = 1, count = this._first): Promise<IAPI4ByteElement[]> {
         const request = await axios.get('https://www.4byte.directory/api/v1/signatures/', {
-            headers: { 'User-Agent': 'careful-4byte/0.0.1' },
+            headers: { 'User-Agent': 'careful-4byte/0.0.2' },
             params: {
                 hex_signature: selector,
                 page
