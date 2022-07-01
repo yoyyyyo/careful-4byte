@@ -1,4 +1,5 @@
 # careful-4byte
+4byte.dictionary + semi-strict calldata checking = careful-4byte
 
 ## usage
 ```js
