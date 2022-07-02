@@ -31,7 +31,7 @@ export default class Careful4Byte {
 
     async _requestSignatures(selector: string, page = 1, count = this._first): Promise<IAPI4ByteElement[]> {
         const request = await axios.get('https://www.4byte.directory/api/v1/signatures/', {
-            headers: { 'User-Agent': 'careful-4byte/0.0.2' },
+            headers: { 'User-Agent': 'careful-4byte/0.1.0' },
             params: {
                 hex_signature: selector,
                 page

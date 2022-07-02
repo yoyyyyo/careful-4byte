@@ -1,6 +1,6 @@
 {
   "name": "careful-4byte",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "homepage": "https://github.com/yoyyyyo/careful-4byte",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
