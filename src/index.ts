@@ -57,7 +57,7 @@ export default class Careful4Byte {
             return this._cache[selector];
 
         const sigs = (await this._requestSignatures(selector))
-                        .sort((a, b) => b.id - a.id)
+                        .sort((a, b) => a.id - b.id)
                         .map(a => a.text_signature);
 
         if (sigs.length > 0 && this._cache !== null)
